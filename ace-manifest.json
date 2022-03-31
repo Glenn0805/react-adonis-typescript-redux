@@ -94,6 +94,102 @@
       "args": [],
       "aliases": [],
       "flags": []
+    },
+    "mix:build": {
+      "settings": {
+        "stayAlive": true
+      },
+      "commandPath": "adonis-mix-asset/build/commands/Mix/Build",
+      "commandName": "mix:build",
+      "description": "Compile Mix",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "mix-config",
+          "propertyName": "mixConfig",
+          "type": "string",
+          "description": "The path to your Mix configuration file. Default: 'webpack.mix.js'"
+        },
+        {
+          "name": "progress",
+          "propertyName": "progress",
+          "type": "boolean",
+          "description": "Enable progress reporting. Default: true"
+        },
+        {
+          "name": "production",
+          "propertyName": "production",
+          "type": "boolean",
+          "description": "Build assets for production"
+        },
+        {
+          "name": "analyze",
+          "propertyName": "analyze",
+          "type": "boolean",
+          "description": "Open bundle analyzer"
+        },
+        {
+          "name": "hot",
+          "propertyName": "hot",
+          "type": "boolean",
+          "description": "Enable hot reloading"
+        },
+        {
+          "name": "https",
+          "propertyName": "https",
+          "type": "boolean",
+          "description": "Enable https"
+        }
+      ]
+    },
+    "mix:watch": {
+      "settings": {
+        "stayAlive": true
+      },
+      "commandPath": "adonis-mix-asset/build/commands/Mix/Watch",
+      "commandName": "mix:watch",
+      "description": "Build and watch files for changes",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "mix-config",
+          "propertyName": "mixConfig",
+          "type": "string",
+          "description": "The path to your Mix configuration file. Default: 'webpack.mix.js'"
+        },
+        {
+          "name": "progress",
+          "propertyName": "progress",
+          "type": "boolean",
+          "description": "Enable progress reporting. Default: true"
+        },
+        {
+          "name": "production",
+          "propertyName": "production",
+          "type": "boolean",
+          "description": "Build assets for production"
+        },
+        {
+          "name": "analyze",
+          "propertyName": "analyze",
+          "type": "boolean",
+          "description": "Open bundle analyzer"
+        },
+        {
+          "name": "hot",
+          "propertyName": "hot",
+          "type": "boolean",
+          "description": "Enable hot reloading"
+        },
+        {
+          "name": "https",
+          "propertyName": "https",
+          "type": "boolean",
+          "description": "Enable https"
+        }
+      ]
     }
   },
   "aliases": {}
