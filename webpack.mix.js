@@ -7,7 +7,7 @@ const mix = require('laravel-mix')
  * See: https://docs.adonisjs.com/guides/static-assets#the-default-directory
  */
 mix
-//   .webpackConfig(require('./webpack.config.js'))
+  .webpackConfig(require('./webpack.config.js'))
   .setPublicPath('public')
   .ts('resources/js/index.tsx', 'public/dist')
   .react()
