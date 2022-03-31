@@ -1,0 +1,17 @@
+{
+  "entrypoints": {
+    "/dist/index": {
+      "css": [
+        "/assets/sass/app.css"
+      ],
+      "js": [
+        "/assets//dist/index.js"
+      ]
+    },
+    "app": {
+      "js": [
+        "/assets/app.js"
+      ]
+    }
+  }
+}

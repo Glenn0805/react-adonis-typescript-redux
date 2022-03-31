@@ -1,0 +1,5 @@
+{
+  "assets//dist/index.js": "/assets//dist/index.js",
+  "assets/app.js": "/assets/app.js",
+  "assets/sass/app.css": "/assets/sass/app.css"
+}
