@@ -17,5 +17,7 @@
 | import './routes/customer''
 |
 */
+import Route from '@ioc:Adonis/Core/Route'
+Route.get('', ({ response }) => response.redirect('main'))
 
 require('../routes/main/index')

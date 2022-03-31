@@ -1,16 +1,18 @@
 /*eslint-disable*/
 import React, { Component } from 'react'
-import { createRoot } from 'react-dom/client'
 import AppContainer from './AppContainer'
+import ReactDOM from 'react-dom'
+
+
 class App extends Component {
-  render() {
-    return (
-      <>
-        <AppContainer name='GLENN CAVITA' age={23}/>
-      </>
-    )
-  }
+    render() {
+        return (
+            <>
+                <AppContainer name='GLENN CAVITA' age={23}/>
+            </>
+        )
+    }
 }
-const container = document.getElementById('root')
-const root = createRoot(container)
-root.render(<App />)
+
+if (document.getElementById('root')) {
+    ReactDOM.render(<App />, document.getElementById('root'))}
