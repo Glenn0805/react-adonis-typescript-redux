@@ -2,8 +2,8 @@
 
 export default class MainsController {
 
-    public async view({render}){
-        return render.view('main/index')
+    public async view({view}){
+        return view.render('main/index')
     }
 
 }

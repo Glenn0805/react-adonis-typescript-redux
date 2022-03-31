@@ -18,8 +18,4 @@
 |
 */
 
-import Route from '@ioc:Adonis/Core/Route'
-
-Route.get('/', async ({ view }) => {
-  return view.render('main/index')
-})
+require('../routes/main/index')
