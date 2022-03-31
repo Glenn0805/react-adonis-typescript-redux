@@ -6,6 +6,8 @@
     "outDir": "build",
     "rootDir": "./",
     "sourceMap": true,
+    "target": "es6",
+    "jsx": "react",
     "paths": {
       "App/*": ["./app/*"],
       "Config/*": ["./config/*"],

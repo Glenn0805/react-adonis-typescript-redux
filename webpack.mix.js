@@ -9,7 +9,7 @@ const mix = require('laravel-mix')
 mix
   .webpackConfig(require('./webpack.config.js'))
   .setPublicPath('public')
-  .ts('resources/js/app.ts', 'public/dist/')
+  .tsx('resources/js/app.tsx', 'public/dist/')
   .react()
   .sass('resources/sass/app.scss', 'public/sass/')
 
