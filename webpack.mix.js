@@ -6,6 +6,10 @@ const mix = require('laravel-mix')
  * If you want to change Laravel Mix public path, change the AdonisJS public path config first!
  * See: https://docs.adonisjs.com/guides/static-assets#the-default-directory
  */
-mix.setPublicPath('public')
+mix
+  .setPublicPath('public')
+  .ts('resources/js/app.ts', 'public/dist/')
+  .react()
+  .sass('resources/sass/app.scss', 'public/sass/')
 
 // Add your assets here
