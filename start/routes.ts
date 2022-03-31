@@ -18,6 +18,9 @@
 |
 */
 import Route from '@ioc:Adonis/Core/Route'
+import Application from '@ioc:Adonis/Core/Application'
 Route.get('', ({ response }) => response.redirect('main'))
 
-require('../routes/main/index')
+const index=Application.makePath('routes/main/')
+
+require(index+'index')

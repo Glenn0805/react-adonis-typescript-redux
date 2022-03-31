@@ -19,7 +19,7 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 | be inside the public directory, so that AdonisJS can serve it.
 |
 */
-Encore.setOutputPath('./public/assets')
+Encore.setOutputPath('./public')
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ Encore.setOutputPath('./public/assets')
 | relative from the "public" directory.
 |
 */
-Encore.setPublicPath('/assets')
+Encore.setPublicPath('/')
 
 /*
 |--------------------------------------------------------------------------
