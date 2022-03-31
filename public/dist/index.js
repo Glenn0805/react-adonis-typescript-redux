@@ -22,8 +22,8 @@ Object.defineProperty(exports, "__esModule", ({
 
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var AppContainer = function AppContainer() {
-  return react_1["default"].createElement("div", null, "AppContainer");
+var AppContainer = function AppContainer(props) {
+  return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement("div", null, "NAME:", props.name, " ", react_1["default"].createElement("br", null), "Age :", props.age));
 };
 
 exports["default"] = AppContainer;
@@ -124,7 +124,9 @@ var App = /*#__PURE__*/function (_react_1$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(AppContainer_1["default"], null));
+      return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(AppContainer_1["default"], {
+        name: 'GLENN CAVITA'
+      }));
     }
   }]);
 
