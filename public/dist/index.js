@@ -125,7 +125,8 @@ var App = /*#__PURE__*/function (_react_1$Component) {
     key: "render",
     value: function render() {
       return react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(AppContainer_1["default"], {
-        name: 'GLENN CAVITA'
+        name: 'GLENN CAVITA',
+        age: 23
       }));
     }
   }]);
