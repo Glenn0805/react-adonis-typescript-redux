@@ -38,6 +38,7 @@
     "@adonisjs/view": "^6.1.2",
     "@babel/plugin-transform-modules-commonjs": "^7.17.7",
     "adonis-mix-asset": "^3.0.0",
+    "antd": "^4.19.3",
     "cross-env": "^7.0.3",
     "proxy-addr": "^2.0.7",
     "react": "^16.14.0",
