@@ -5,7 +5,7 @@ coverage
 .DS_STORE
 .env
 tmp
-public
+/public
 
 /public/mix-manifest.json
 /public/entrypoints.json
