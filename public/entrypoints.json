@@ -1,8 +1,16 @@
 {
   "entrypoints": {
+    "/dist/index": {
+      "css": [
+        "/sass/app.css"
+      ],
+      "js": [
+        "//dist/index.js"
+      ]
+    },
     "app": {
       "js": [
-        "http://localhost:53132/app.js"
+        "/app.js"
       ]
     }
   }
