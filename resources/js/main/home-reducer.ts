@@ -1,9 +1,10 @@
 /*eslint-disable*/
 import { combineReducers } from 'redux'
+import foobarReducer from './component/foobar/foobar-reducer'
 
 
 const rootReducer =combineReducers({
-   // movieList:MovieListReducer
+   foobar:foobarReducer
 }) 
 
 export default rootReducer

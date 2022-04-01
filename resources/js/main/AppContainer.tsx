@@ -1,14 +1,12 @@
 import React from 'react'
+import FoobarComponent from './component/foobar/FoobarComponent'
 
 const AppContainer = () => {
   return (
     <>
-      <div>
-        AppContainer
-      </div>
-
+      <FoobarComponent />
     </>
-    )
+  )
 }
 
 export default AppContainer
