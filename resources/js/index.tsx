@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
             <>
-                <AppContainer name='GLENN CAVITA' age={24} position='Jr Web Dev'/>
+                <AppContainer name='GLENN CAVITA' age={24} position='Jr Web Developer'/>
             </>
         )
     }
