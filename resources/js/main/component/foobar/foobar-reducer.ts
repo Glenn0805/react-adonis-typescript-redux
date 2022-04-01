@@ -1,6 +1,6 @@
 /*eslint-disable*/
 const initialState:any={
-    numberState:1
+    numberState:0
 }
 
 const reducers = {
