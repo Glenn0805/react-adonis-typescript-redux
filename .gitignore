@@ -6,3 +6,6 @@ coverage
 .env
 tmp
 public
+
+/public/mix-manifest.json
+/public/entrypoints.json

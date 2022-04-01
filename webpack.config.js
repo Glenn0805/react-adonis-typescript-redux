@@ -45,7 +45,7 @@ Encore.setPublicPath('/')
 | entrypoints.
 |
 */
-Encore.addEntry('app', './resources/js/index.tsx')
+Encore.addEntry('app', './resources/js/main/index.tsx')
 .enableTypeScriptLoader()
 /*
 |--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ Encore.disableSingleRuntimeChunk()
 | will ensure that all unused files from the previous build are removed.
 |
 */
-Encore.cleanupOutputBeforeBuild()
+// Encore.cleanupOutputBeforeBuild()
 
 /*
 |--------------------------------------------------------------------------
