@@ -1,12 +1,26 @@
+/*eslint-disable*/
 import React from 'react'
-
+import { decrementFunction,incrementFunction } from './foobar-actions'
 import useFoobarState from './hooks/useFoobarState'
-
+import { useDispatch } from 'react-redux'
 const FoobarComponent = () => {
   let numberState: any = useFoobarState('numberState')
- //const dispatch=useDispatch()
+ const dispatch=useDispatch()
+
+ const increment=()=>{
+  dispatch(incrementFunction(numberState))
+ }
+
+ const decrement=()=>{
+  dispatch(decrementFunction(numberState))
+ }
   return (
-    <div>{numberState}</div>
+    <> 
+     <button onClick={increment}>+</button>
+     {numberState}
+    <button onClick={decrement}>-</button>
+    </>
+   
   )
 }
 

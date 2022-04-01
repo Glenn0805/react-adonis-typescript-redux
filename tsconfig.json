@@ -7,7 +7,8 @@
     "outDir": "build",
     "rootDir": "./",
     "sourceMap": true,
-    "target": "es6",
+    "module": "esnext",
+    "target": "es5",
     "jsx": "react",
     "paths": {
       "App/*": ["./app/*"],
