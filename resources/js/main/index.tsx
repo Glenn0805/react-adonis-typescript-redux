@@ -1,18 +1,16 @@
 /*eslint-disable*/
-import React, { Component } from 'react'
+import React from 'react'
+import { Provider } from 'react-redux'
+import store from './home-store'
 import AppContainer from './AppContainer'
 import ReactDOM from 'react-dom'
 
 
-class App extends Component {
-    render() {
-        return (
-            <>
-                <AppContainer name='GLENN CAVITA' age={24} position='Jr Web Developer'/>
-            </>
-        )
-    }
-}
-
 if (document.getElementById('root')) {
-    ReactDOM.render(<App />, document.getElementById('root'))}
+    ReactDOM.render(
+        <Provider store={store}>
+           <AppContainer/>
+        </Provider>,
+        document.getElementById('root')
+    )
+}
