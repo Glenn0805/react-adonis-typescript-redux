@@ -1,12 +1,6 @@
 /*eslint-disable*/
-const initialState={
-    upComing:[],
-    newMovie:[],
-    sideBarToggle:false,
-    movieDetailModal:{
-        detail:{},
-        toggle:false
-    }
+const initialState:any={
+    numberState:0
 }
 
 const reducers = {
