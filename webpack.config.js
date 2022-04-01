@@ -45,7 +45,7 @@ Encore.setPublicPath('/')
 | entrypoints.
 |
 */
-Encore.addEntry('app', './resources/js/index.tsx')
+Encore.addEntry('app', './resources/js/main/index.tsx')
 .enableTypeScriptLoader()
 /*
 |--------------------------------------------------------------------------
