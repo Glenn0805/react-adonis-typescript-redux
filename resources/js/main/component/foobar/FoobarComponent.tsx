@@ -3,6 +3,9 @@ import React from 'react'
 import { decrementFunction,incrementFunction } from './foobar-actions'
 import useFoobarState from './hooks/useFoobarState'
 import { useDispatch } from 'react-redux'
+import { Button } from 'antd';
+
+
 const FoobarComponent = () => {
   let numberState: any = useFoobarState('numberState')
  const dispatch=useDispatch()
@@ -16,9 +19,15 @@ const FoobarComponent = () => {
  }
   return (
     <> 
-     <button onClick={increment}>+</button>
+     <Button type="primary" onClick={increment}>+</Button>
      {numberState}
-    <button onClick={decrement}>-</button>
+    <Button type="primary" onClick={decrement}>-</Button>
+    <Button type="primary">Primary Button</Button>
+    <Button>Default Button</Button>
+    <Button type="dashed">Dashed Button</Button>
+    <br />
+    <Button type="text">Text Button</Button>
+    <Button type="link">Link Button</Button>
     </>
    
   )
