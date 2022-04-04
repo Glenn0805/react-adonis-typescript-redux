@@ -4,7 +4,6 @@ import { Provider } from 'react-redux'
 import store from './home-store'
 import AppContainer from './AppContainer'
 import ReactDOM from 'react-dom'
-import './index.css'
 import 'antd/dist/antd.scss';
 if (document.getElementById('root')) {
     ReactDOM.render(
