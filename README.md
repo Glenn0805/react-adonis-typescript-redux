@@ -2,7 +2,7 @@
   1. run "npm install"
   2. create .env file
   3. copy .env.example to .env
-  4. run "adonis generate:key"
+  4. run "adonis key:generate"
   5. in .env file paste the generated key in the APP_KEY
   6. open terminal and run "node ace serve --watch"
   7. open another terminal and run "npm run watch"
