@@ -6,3 +6,8 @@
   5. in .env file paste the generated key in the APP_KEY
   6. open terminal and run "node ace serve --watch"
   7. open another terminal and run "npm run watch"
+
+#For Setup the Migration And Model
+  1.npm install @adonisjs/lucid@alpha
+  2.node ace invoke @adonisjs/lucid
+  run this commands to add model commands and migration commands
