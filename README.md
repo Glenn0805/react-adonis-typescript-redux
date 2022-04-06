@@ -10,4 +10,6 @@
 #For Setup the Migration And Model
   1.npm install @adonisjs/lucid@alpha
   2.node ace invoke @adonisjs/lucid
+    -choose Database
+  3.npm install mysql
   run this commands to add model commands and migration commands
