@@ -1,26 +1,19 @@
-/*eslint-disable*/
-import { createStore, applyMiddleware, compose } from 'redux'
+import { configureStore } from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
 import rootReducer from './home-reducer'
 
 const middlewares = [
-    thunk
-    // socketIoMiddleware
+  thunk,
+  // socketIoMiddleware
 ]
 
-let tryToCreateStore = (composeEnhancers) => createStore(
-    rootReducer,
-    composeEnhancers(applyMiddleware(...middlewares))
-)
-
 let store
-try {
-    let composeFunction = (process.env.NODE_ENV !== 'production'
-      &&  (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__)
-    || compose
-    store = tryToCreateStore(composeFunction)
-} catch (error) {
-    store = tryToCreateStore(compose)
-}
+let tryToCreateStore = () =>
+  configureStore({
+    reducer: rootReducer,
+    middleware: middlewares,
+  })
+
+store = tryToCreateStore()
 
 export default store
