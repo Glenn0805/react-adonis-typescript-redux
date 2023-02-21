@@ -8,7 +8,7 @@ import { Button } from 'antd';
 
 const FoobarComponent = () => {
   let numberState: any = useFoobarState('numberState')
- const dispatch=useDispatch()
+ const dispatch:Function=useDispatch()
 
  const increment=()=>{
   dispatch(incrementFunction(numberState))
